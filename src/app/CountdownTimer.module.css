@@ -1,0 +1,102 @@
+/* CountdownTimer.module.css */
+.container {
+    display: flex;
+    background-image: url('back.bmp');
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    color: #f7f4f7;
+    
+}
+
+
+.inputField {
+    background-color: #f7f4f7;
+    color: #151516;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 20px;
+    width: 100%; /* Full width inside the box */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 30px;
+}
+.timerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    border: 10px solid #0ef; /* Border around the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px; /* Slight shadow for depth */
+    background-color: #252a3b; /* White background for the inner box */
+}
+
+.timeDisplay {
+    font-size: larger; /* Large font size for time */
+    font-weight: bold;
+    color: #aae015; /* Dark text color */
+    margin: 20px 0; /* Space around the time display */
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Full width inside the box */
+}
+
+.button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(253, 251, 251);
+    border: 5px solid rgb(235, 228, 228);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent; /* No background color */
+    transition: color 0.3s ease, border-color 0.3s ease;
+
+    
+}
+
+.button:hover:not(:disabled) {
+    color: #e02050;
+    border-color: #0ef;
+    background-color: rgb(237, 241, 239);
+}
+
+.button:disabled {
+    color: #151516;
+    border-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+
+
+
+@keyframes colorChange {
+    0% { color: #0A97B0; }
+    25% { color: #ffff00; }
+    50% { color: #0d7068; }
+    75% { color: #e02050; }
+    100% { color: #0ef; }
+}
+
+.timerDisplay {
+    font-size: 48px;
+    animation: colorChange 2s infinite alternate;
+    
+}
+.header{
+    font-size: 30px;
+    color: #0A97B0;
+}
+
+
+/*.header {
+    font-size: 30px;
+    animation: colorChange 1s infinite alternate;
+}
+*/
